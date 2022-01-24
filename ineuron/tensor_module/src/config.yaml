@@ -1,0 +1,22 @@
+params:
+  test: testkeyword
+  epocs: 5
+  batch_size: 32
+  loss_function: sparse_categorical_crossentropy
+  metric: accuracy
+  optimizer: SGD
+  validation_dataset: 5000
+  num_classes: 10
+
+artifacts:
+  artifacts_dir: artifacts
+  model_dir: model
+  plots_dir: plots
+  checkpoint_dir: checkspoints
+  model_name: model_test.h5
+  plot_name: accuarcy_plot
+
+logs:
+  logs_dir: logs_dir
+  general_logs: general_logs
+  tensorboard_logs: tensorboard_logs
